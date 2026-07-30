@@ -9,7 +9,7 @@ function App() {
           githubUrl="https://github.com/umfrancisco"
           linkedinUrl="https://www.linkedin.com/in/francisco-guitler"
           fullName="Francisco Guitler"
-          techStack = "Backend Developer"
+          techStack = "Full Stack Developer"
         />
         <RepoList username="umfrancisco" />
       </>
