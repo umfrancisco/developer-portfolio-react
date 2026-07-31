@@ -20,11 +20,11 @@ const RepoList = ({ username }) => {
 
     function getImgUrl(language) {
         if (language === "Java") {
-            return "./src/assets/java-icon.svg";
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/java-icon.svg";
         } else if (language === "JavaScript") {
-            return "./src/assets/javascript-icon.svg";
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/javascript-icon.svg";
         } else if (language === "Go") {
-            return "./src/assets/go-icon.svg";
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/go-icon.svg";
         } else {
             return "unknown";
         }
