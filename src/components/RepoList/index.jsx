@@ -52,7 +52,7 @@ const RepoList = ({ username }) => {
                                 </div>
                             </div>
                             <div className={styles.linkContainer}>
-                                <a className={styles.itemLink} target="_blank" href={repository.html_url}>Visit project</a>
+                                <a className={styles.itemLink} target="_blank" href={repository.link}>Visit project</a>
                             </div>
                         </li>
                     ))}
