@@ -18,6 +18,18 @@ const RepoList = ({ username }) => {
         })
     }, [username])
 
+    function getImgUrl(language) {
+        if (language === "Java") {
+            return "./src/assets/java-icon.svg";
+        } else if (language === "JavaScript") {
+            return "./src/assets/javascript-icon.svg";
+        } else if (language === "Go") {
+            return "./src/assets/go-icon.svg";
+        } else {
+            return "unknown";
+        }
+    }
+
     return (
         <div className="container">
             <h4 className={styles.title}>Selected Projects</h4>
@@ -27,14 +39,17 @@ const RepoList = ({ username }) => {
                 <ul className={styles.list}>
                     {repos.map(repository => (
                         <li className={styles.listItem} key={repository.id}>
-                            <div className={styles.itemName}>
-                                <b>Name:</b>{repository.name}
-                            </div>
-                            <div className={styles.itemName}>
-                                <b>Description:</b>{repository.description}
-                            </div>
-                            <div className={styles.itemLanguage}>
-                                <b>Language:</b>{repository.language}
+                            <img className={styles.langIcon} src={getImgUrl(repository.language)} alt={repository.language} />
+                            <div className={styles.repoContainer}>
+                                <div className={styles.itemName}>
+                                    <b>Name:</b>{repository.name}
+                                </div>
+                                <div className={styles.itemName}>
+                                    <b>Description:</b>{repository.description}
+                                </div>
+                                <div className={styles.itemLanguage}>
+                                    <b>Language:</b>{repository.language}
+                                </div>
                             </div>
                             <div className={styles.linkContainer}>
                                 <a className={styles.itemLink} target="_blank" href={repository.html_url}>Visit project</a>
