@@ -8,7 +8,7 @@ const RepoList = ({ username }) => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`https://api.github.com/users/${username}/starred`)
+        fetch(`https://staging-repo-projects-api-r77i.encr.app/projects`)
         .then(res => res.json())
         .then(resJson => {
             setTimeout(() => {
@@ -37,7 +37,7 @@ const RepoList = ({ username }) => {
                 <h4 className={styles.title}>Loading...</h4>
             ) : (
                 <ul className={styles.list}>
-                    {repos.map(repository => (
+                    {repos.projects.map(repository => (
                         <li className={styles.listItem} key={repository.id}>
                             <img className={styles.langIcon} src={getImgUrl(repository.language)} alt={repository.language} />
                             <div className={styles.repoContainer}>
