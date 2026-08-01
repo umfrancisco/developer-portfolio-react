@@ -6,7 +6,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 56px;
+    max-height: 56px;
     padding: 8px;
 }
 
