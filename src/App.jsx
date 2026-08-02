@@ -11,7 +11,7 @@ function App() {
           fullName="Francisco Guitler"
           techStack = "Full Stack Developer"
         />
-        <RepoList username="umfrancisco" />
+        <RepoList />
       </>
     </div>
   )

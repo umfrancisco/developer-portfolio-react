@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from './RepoList.module.css';
 
-const RepoList = ({ username }) => {
+const RepoList = () => {
 
     const [repos, setRepos] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +16,7 @@ const RepoList = ({ username }) => {
                 setRepos(resJson);
             }, 1000);
         })
-    }, [username])
+    }, [])
 
     function getImgUrl(language) {
         if (language === "Java") {
@@ -34,7 +34,7 @@ const RepoList = ({ username }) => {
         <div className="container">
             <h4 className={styles.title}>Selected Projects</h4>
             {isLoading ? (
-                <h4 className={styles.title}>Loading...</h4>
+                <p className={styles.title}>Loading...</p>
             ) : (
                 <ul className={styles.list}>
                     {repos.projects.map(repository => (
@@ -52,7 +52,7 @@ const RepoList = ({ username }) => {
                                 </div>
                             </div>
                             <div className={styles.linkContainer}>
-                                <a className={styles.itemLink} target="_blank" href={repository.link}>Visit project</a>
+                                <a className={styles.itemLink} href={repository.link}>Visit project</a>
                             </div>
                         </li>
                     ))}
