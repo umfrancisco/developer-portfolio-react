@@ -21,13 +21,17 @@ const RepoList = () => {
     function getImgUrl(language) {
         if (language === "Java") {
             return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/java-icon.svg";
-        } else if (language === "JavaScript") {
-            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/javascript-icon.svg";
-        } else if (language === "Go") {
-            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/go-icon.svg";
-        } else {
-            return "unknown";
         }
+        if (language === "JavaScript") {
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/javascript-icon.svg";
+        }
+        if (language === "Go") {
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/go-icon.svg";
+        }
+        if (language === "TypeScript") {
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/typescript-icon.svg";
+        }
+        return "unknown";
     }
 
     return (
