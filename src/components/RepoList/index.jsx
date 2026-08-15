@@ -8,7 +8,7 @@ const RepoList = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`https://staging-repo-projects-api-r77i.encr.app/projects`)
+        fetch(`https://firewire-varies-explore-explosion.trycloudflare.com/projects`)
         .then(res => res.json())
         .then(resJson => {
             setTimeout(() => {
@@ -41,7 +41,7 @@ const RepoList = () => {
                 <p className={styles.title}>Loading...</p>
             ) : (
                 <ul className={styles.list}>
-                    {repos.projects.map(repository => (
+                    {repos.map(repository => (
                         <li className={styles.listItem} key={repository.id}>
                             <img className={styles.langIcon} src={getImgUrl(repository.language)} alt={repository.language} />
                             <div className={styles.repoContainer}>
