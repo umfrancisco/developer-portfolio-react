@@ -5,10 +5,11 @@ const RepoList = () => {
 
     const [repos, setRepos] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
         setIsLoading(true);
-        fetch("https://steam-consumption-topics-association.trycloudflare.com/projects")
+        fetch(apiUrl)
         .then(res => res.json())
         .then(resJson => {
             setTimeout(() => {
