@@ -8,7 +8,7 @@ const RepoList = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch("https://date-hydraulic-tampa-tail.trycloudflare.com/projects")
+        fetch("https://having-normal-houston-differently.trycloudflare.com/projects")
         .then(res => res.json())
         .then(resJson => {
             setTimeout(() => {
