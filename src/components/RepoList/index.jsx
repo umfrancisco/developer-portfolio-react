@@ -1,36 +1,21 @@
 import { useEffect, useState } from "react";
 import styles from './RepoList.module.css';
+import { projects } from "../../data";
 
 const RepoList = () => {
 
-    const [repos, setRepos] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    const apiUrl = import.meta.env.VITE_API_URL;
-
-    useEffect(() => {
-        setIsLoading(true);
-        fetch(apiUrl)
-        .then(res => res.json())
-        .then(resJson => {
-            setTimeout(() => {
-                setIsLoading(false);
-                setRepos(resJson);
-            }, 1000);
-        })
-    }, [])
-
     function getImgUrl(language) {
         if (language === "Java") {
-            return "src/assets/java-icon.svg";
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/java-icon.svg";
         }
         if (language === "JavaScript") {
-            return "src/assets/javascript-icon.svg";
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/javascript-icon.svg";
         }
         if (language === "Go") {
-            return "src/assets/go-icon.svg";
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/go-icon.svg";
         }
         if (language === "TypeScript") {
-            return "src/assets/typescript-icon.svg";
+            return "https://raw.githubusercontent.com/umfrancisco/developer-portfolio-react/refs/heads/main/src/assets/typescript-icon.svg";
         }
         return "unknown";
     }
@@ -38,31 +23,27 @@ const RepoList = () => {
     return (
         <div className="container">
             <h4 className={styles.title}>Selected Projects</h4>
-            {isLoading ? (
-                <p className={styles.title}>Loading...</p>
-            ) : (
-                <ul className={styles.list}>
-                    {repos.map(repository => (
-                        <li className={styles.listItem} key={repository.id}>
-                            <img className={styles.langIcon} src={getImgUrl(repository.language)} alt={repository.language} />
-                            <div className={styles.repoContainer}>
-                                <div className={styles.itemName}>
-                                    <b>Name:</b>{repository.name}
-                                </div>
-                                <div className={styles.itemName}>
-                                    <b>Description:</b>{repository.description}
-                                </div>
-                                <div className={styles.itemLanguage}>
-                                    <b>Language:</b>{repository.language}
-                                </div>
+            <ul className={styles.list}>
+                {projects.map(project => (
+                    <li className={styles.listItem} key={project.id}>
+                        <img className={styles.langIcon} src={getImgUrl(project.language)} alt={project.language} />
+                        <div className={styles.repoContainer}>
+                            <div className={styles.itemName}>
+                                <b>Name:</b>{project.name}
                             </div>
-                            <div className={styles.linkContainer}>
-                                <a className={styles.itemLink} href={repository.link}>Visit project</a>
+                            <div className={styles.itemName}>
+                                <b>Description:</b>{project.description}
                             </div>
-                        </li>
-                    ))}
-                </ul>
-            )}
+                            <div className={styles.itemLanguage}>
+                                <b>Language:</b>{project.language}
+                            </div>
+                        </div>
+                        <div className={styles.linkContainer}>
+                            <a className={styles.itemLink} href={project.link}>Visit project</a>
+                        </div>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }
