@@ -6,9 +6,10 @@ const RepoList = () => {
 
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
-        fetch("https://staging-repo-projects-api-r77i.encr.app/projects")
+        fetch(apiUrl)
             .then(res => res.json())
             .then(data => {
                 setData(data);
