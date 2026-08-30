@@ -1,6 +1,7 @@
 .header {
     background-color: var(--mainColor);
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-size: contain;
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
