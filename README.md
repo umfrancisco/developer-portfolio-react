@@ -61,23 +61,6 @@ npm install
 
 ---
 
-### 3. Configuration
-
-Edit the `App.jsx` file to personalize your portfolio:
-
-```jsx
-<Profile 
-  githubUrl="https://github.com/your_github"
-  linkedinUrl="https://www.linkedin.com/in/your_name"
-  fullName="Your full name"
-  techStack="Your tech stack"
-/>
-
-<RepoList username="your_github_username" />
-```
-
----
-
 ### 4. Running the Project
 
 Start the development server:
