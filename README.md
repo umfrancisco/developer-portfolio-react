@@ -61,7 +61,7 @@ npm install
 
 ---
 
-### 4. Running the Project
+### 3. Running the Project
 
 Start the development server:
 
@@ -77,7 +77,7 @@ http://localhost:5173
 
 ---
 
-### 5. Build for Production
+### 4. Build for Production
 
 Generate a production build:
 
