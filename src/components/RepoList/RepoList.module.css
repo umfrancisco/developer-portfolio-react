@@ -1,73 +1,74 @@
 .title {
-    margin: 32px;
+  margin: 32px;
 }
 
 .langIcon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-height: 56px;
-    padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 56px;
+  padding: 8px;
 }
 
 .repoContainer {
-    padding-right: 36px;
+  padding-right: 36px;
 }
 
 .list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
 }
 
 .listItem {
-    list-style: none;
-    padding: 16px;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 8px;
-    position: relative;
+  list-style: none;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  position: relative;
 }
 
-.itemName b, .itemLanguage b{
-    margin-right: 8px;
+.itemName b,
+.itemLanguage b {
+  margin-right: 8px;
 }
 
 .itemLink {
-    background-color: var(--mainColor);
-    color: #fff;
-    text-align: center;
-    padding: 8px 0;
-    width: 90%;
-    text-decoration: none;
-    border-radius: 8px;
-    position: absolute;
-    left: 5%;
-    bottom: 16px;
+  background-color: var(--mainColor);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  width: 90%;
+  text-decoration: none;
+  border-radius: 8px;
+  position: absolute;
+  left: 5%;
+  bottom: 16px;
 }
 
 .linkContainer {
-    padding-top: 64px;
+  padding-top: 64px;
 }
 
 @media (max-width: 767px) {
-    .list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
-        margin-right: 16px;
-        margin-left: 16px;
-        margin-bottom: 32px;
-    }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        margin-right: 32px;
-        margin-left: 32px;
-        margin-bottom: 32px;
-    }
-} 
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+  }
+}

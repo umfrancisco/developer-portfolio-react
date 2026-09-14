@@ -8,21 +8,21 @@ Designed to be **fast, minimal, and easily customizable**, this project is ideal
 
 ## Features
 
-* Fast development with Vite
-* GitHub repositories integration
-* Customizable profile section
-* Basic ESLint configuration
-* Clean and minimal UI
+- Fast development with Vite
+- GitHub repositories integration
+- Customizable profile section
+- Basic ESLint configuration
+- Clean and minimal UI
 
 ---
 
 ## Tech Stack
 
-* **React**
-* **Vite**
-* **JavaScript (ES6+)**
-* **CSS**
-* **ESLint**
+- **React**
+- **Vite**
+- **JavaScript (ES6+)**
+- **CSS**
+- **ESLint**
 
 ---
 
@@ -32,8 +32,8 @@ Designed to be **fast, minimal, and easily customizable**, this project is ideal
 
 Make sure you have installed:
 
-* **Node.js** (version 18 or higher recommended)
-* **npm** or **yarn**
+- **Node.js** (version 18 or higher recommended)
+- **npm** or **yarn**
 
 Check your versions:
 
@@ -95,9 +95,9 @@ npm run preview
 
 ## Available Scripts
 
-* `npm run dev` → Run development server
-* `npm run build` → Build project for production
-* `npm run preview` → Preview production build
+- `npm run dev` → Run development server
+- `npm run build` → Build project for production
+- `npm run preview` → Preview production build
 
 ---
 
@@ -105,8 +105,8 @@ npm run preview
 
 This project supports official Vite React plugins:
 
-* **@vitejs/plugin-react** (Babel-based Fast Refresh)
-* **@vitejs/plugin-react-swc** (SWC-based Fast Refresh)
+- **@vitejs/plugin-react** (Babel-based Fast Refresh)
+- **@vitejs/plugin-react-swc** (SWC-based Fast Refresh)
 
 ---
 
@@ -121,4 +121,3 @@ This project is open source and available under the MIT License.
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ---
-
