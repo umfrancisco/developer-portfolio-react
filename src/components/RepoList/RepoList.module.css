@@ -10,6 +10,24 @@
   padding: 8px;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  margin-right: 8px;
+}
+
+select {
+  margin: 32px;
+  padding: 4px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
 .repoContainer {
   padding-right: 36px;
 }
