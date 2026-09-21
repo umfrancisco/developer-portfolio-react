@@ -7,6 +7,7 @@ const RepoList = () => {
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState("");
   const apiUrl = import.meta.env.VITE_API_URL;
+  const selectByLanguage = filter === "" ? data.projects : data.projects.filter(s => s.language === filter);
 
   useEffect(() => {
     fetch(apiUrl)
@@ -33,13 +34,6 @@ const RepoList = () => {
     return "unknown";
   }
 
-  function handleFilter() {
-    if (filter === "") {
-      return data.projects;
-    }
-    return data.projects.filter(s => s.language === filter);
-  }
-
   if (loading) {
     return (
       <div className="container">
@@ -63,7 +57,7 @@ const RepoList = () => {
         </div>
       </div>
       <ul className={styles.list}>
-        {handleFilter().map((project) => (
+        {selectByLanguage.map((project) => (
           <li className={styles.listItem} key={project.name}>
             <img
               className={styles.langIcon}
