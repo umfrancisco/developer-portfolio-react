@@ -45,8 +45,9 @@ function About({ onOpen }) {
           <p>Collaborative teams with strong engineering culture</p>
           <p>Opportunities to grow in JavaScript, TypeScript and React</p>
         </div>
+
+        <button onClick={onOpen}>Check out my selected projects</button>
       </div>
-      <button onClick={onOpen}>Check out my selected projects</button>
     </div>
   );
 }

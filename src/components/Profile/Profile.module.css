@@ -1,18 +1,14 @@
 .header {
   background-color: var(--mainColor);
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  text-align: center;
-  padding: 120px 0 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header h2 {
   font-size: 16px;
   color: #fff;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .header a {
@@ -25,11 +21,30 @@
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 16px;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1024px;
+  justify-content: space-between;
+}
+
+.content > div {
+  margin-left: 16px;
+  text-align: end;
 }
 
 @media (max-width: 768px) {
-  .header {
+  .content {
     display: block;
     background-size: contain;
+    text-align: center;
+  }
+
+  .content > div {
+    text-align: center;
   }
 }
