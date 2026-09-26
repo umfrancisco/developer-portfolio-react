@@ -1,5 +1,5 @@
 .title {
-  margin: 32px;
+  margin: 16px;
 }
 
 .langIcon {
@@ -16,16 +16,23 @@
   align-items: center;
 }
 
+.buttons {
+  display: flex;
+  margin-right: 16px;
+}
+
 label {
   margin-right: 8px;
 }
 
-select {
-  margin: 32px;
+select,
+button {
+  margin: 16px 8px 16px 0;
   padding: 4px 6px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .repoContainer {
