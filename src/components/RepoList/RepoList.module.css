@@ -1,5 +1,6 @@
 .title {
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .langIcon {
@@ -18,16 +19,16 @@
 
 .buttons {
   display: flex;
-  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-label {
+select {
   margin-right: 8px;
 }
 
 select,
-button {
-  margin: 16px 8px 16px 0;
+.buttons > button {
   padding: 4px 6px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 8px;
@@ -77,6 +78,14 @@ button {
 }
 
 @media (max-width: 767px) {
+  .title {
+    margin-left: 16px;
+  }
+
+  .buttons {
+    margin-right: 16px;
+  }
+
   .list {
     display: grid;
     grid-template-columns: 1fr;
@@ -88,6 +97,14 @@ button {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    margin-left: 32px;
+  }
+
+  .buttons {
+    margin-right: 32px;
+  }
+
   .list {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -15,7 +15,7 @@ function App() {
       <Profile
         githubUrl="https://github.com/umfrancisco"
         linkedinUrl="https://www.linkedin.com/in/francisco-guitler"
-      />
+        />
       {isOpen ? (
         <RepoList onOpen={handleIsOpen} />
       ) : (

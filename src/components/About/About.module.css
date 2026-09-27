@@ -1,0 +1,28 @@
+.content {
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-left: 16px;
+  color: var(--textColor);
+}
+
+.content > h3, .content > h4 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.content > button {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 4px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tech > img {
+  margin-right: 8px;
+}

@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 function About({ onOpen }) {
   return (
     <div className="container">
-      <div>
+      <div className={styles["content"]}>
         <h3>About me</h3>
 
         <div>
@@ -16,7 +16,7 @@ function About({ onOpen }) {
         <h3>Tech Stack</h3>
 
         <h4>Languages & Frameworks</h4>
-        <div>
+        <div className={styles["tech"]}>
           <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000" alt="" />
           <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="" />
           <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" alt="" />
@@ -25,14 +25,14 @@ function About({ onOpen }) {
         </div>
 
         <h4>Databases</h4>
-        <div>
+        <div className={styles["tech"]}>
           <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="" />
           <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" alt="" />
           <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="" />
         </div>
 
         <h4>Tools & Technologies</h4>
-        <div>
+        <div className={styles["tech"]}>
           <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="" />
           <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="" />
           <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="" />
