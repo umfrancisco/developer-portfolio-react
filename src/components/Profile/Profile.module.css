@@ -22,6 +22,8 @@
   border-radius: 50%;
   object-fit: cover;
   margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 8px;
 }
 
 .content {
@@ -33,6 +35,7 @@
 }
 
 .content > div {
+  margin-left: 16px;
   margin-right: 16px;
   text-align: end;
 }
